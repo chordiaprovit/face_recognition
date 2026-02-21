@@ -1,0 +1,5 @@
+name: face_detection_tflite
+version: 0.0.0
+description: Stub for local testing
+environment:
+  sdk: '>=2.18.0 <4.0.0'

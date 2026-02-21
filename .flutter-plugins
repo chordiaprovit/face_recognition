@@ -1,0 +1,16 @@
+# This is a generated file; do not edit or check into version control.
+camera=/Users/provitchordia/.pub-cache/hosted/pub.dev/camera-0.10.5+9/
+camera_android=/Users/provitchordia/.pub-cache/hosted/pub.dev/camera_android-0.10.9+11/
+camera_android_camerax=/Users/provitchordia/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.6/
+camera_avfoundation=/Users/provitchordia/.pub-cache/hosted/pub.dev/camera_avfoundation-0.9.19/
+camera_web=/Users/provitchordia/.pub-cache/hosted/pub.dev/camera_web-0.3.5/
+flutter_plugin_android_lifecycle=/Users/provitchordia/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.22/
+google_mlkit_commons=/Users/provitchordia/.pub-cache/hosted/pub.dev/google_mlkit_commons-0.11.0/
+google_mlkit_face_detection=/Users/provitchordia/.pub-cache/hosted/pub.dev/google_mlkit_face_detection-0.13.1/
+permission_handler=/Users/provitchordia/.pub-cache/hosted/pub.dev/permission_handler-11.3.1/
+permission_handler_android=/Users/provitchordia/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.13/
+permission_handler_apple=/Users/provitchordia/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/
+permission_handler_html=/Users/provitchordia/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+5/
+permission_handler_windows=/Users/provitchordia/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+sqflite=/Users/provitchordia/.pub-cache/hosted/pub.dev/sqflite-2.3.3+1/
+tflite_flutter=/Users/provitchordia/.pub-cache/hosted/pub.dev/tflite_flutter-0.11.0/
