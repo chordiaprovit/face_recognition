@@ -24,8 +24,8 @@ class RecognitionService {
   RecognitionService({
     required FacePipeline pipeline,
     required FaceRepository repo,
-    this.similarityThreshold = 0.55,
-    this.distanceThreshold = 0.90,
+    this.similarityThreshold = 0.65,
+    this.distanceThreshold = 0.85,
   })  : _pipeline = pipeline,
         _repo = repo;
 
@@ -58,9 +58,9 @@ class RecognitionService {
       ..sort((a, b) =>
           (b.boundingBox.width * b.boundingBox.height)
               .compareTo(a.boundingBox.width * a.boundingBox.height));
-    final face = sorted.first;
 
-    final probe = await _pipeline.embeddingForFace(face, orientedImageBytes);
+    final probe = await _pipeline.embeddingForFace(
+        sorted.first, orientedImageBytes);
     final probeF32 = Float32List.fromList(probe);
 
     final enrolled = await _repo.getAllFaces();
@@ -75,6 +75,9 @@ class RecognitionService {
       return res;
     }
 
+    // Group embeddings by label — with multi-angle enrollment there are
+    // multiple rows per person. We find the BEST matching embedding across
+    // ALL rows, then attribute the match to that person's label.
     EnrolledFace? best;
     double bestDist = double.infinity;
     double bestSim = -1.0;

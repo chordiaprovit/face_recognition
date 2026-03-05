@@ -35,9 +35,9 @@ class FacePipeline {
 
     // Init embedding model once.
     await EmbeddingService.init(
-      modelAssetPath: 'assets/models/mobilefacenet_112x112.tflite',
-      inputSize: 112,
-      embeddingDim: 192,
+      modelAssetPath: 'assets/models/arcface_mobilefacenet.tflite',
+      inputSize: 112,   // ArcFace MobileFaceNet still uses 112x112
+      embeddingDim: 512,
       threads: 2,
     );
 
